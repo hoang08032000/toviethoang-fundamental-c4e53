@@ -10,5 +10,9 @@ for(let i=0;i<3;i++){
     console.log(`MONTH ${i+1} \n One month passed, now here is my flock \n ${flock} `) 
     
 }
-let money = flock.reduce((accumalator,currentValue) => accumalator+currentValue)
+let money = 0
+for(let i=0;i<flock.length;i++){
+    money = money + flock[i]
+}
+// let money = flock.reduce((accumalator,currentValue) => accumalator+currentValue)
 console.log(`My flock has size in total: ${money} \n I would get ${money} * 2$ = ${money*2}$`)
