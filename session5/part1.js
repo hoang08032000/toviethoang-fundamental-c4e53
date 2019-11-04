@@ -1,6 +1,3 @@
-// let randoms = [2,3,4,5,6]
-// console.log(Math.random()*1)
-// console.log(randoms[Math.floor(Math.random()*randoms.length)])
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
   }
@@ -17,6 +14,7 @@ let quizzes = [
     },
 ]
 let loop = true
+let numberOfQuestions = quizzes.length
 let point = 0
 while(loop){
     let random = quizzes[Math.floor(Math.random()*quizzes.length)]
@@ -34,15 +32,7 @@ while(loop){
     }
     quizzes.splice(quizzes.indexOf(random),1)
     if(quizzes.length == 0){
-        alert(`Chúc mừng bạn đã trả lời đúng ${point}/${quizzes.length} câu hỏi`)
+        alert(`Chúc mừng bạn đã trả lời đúng ${point}/${numberOfQuestions} câu hỏi`)
         loop = false
     }
 }
-// let a = [1,2,3,4]
-// let b = ""
-// a.forEach((v,i)=>{
-//     b+= 
-//     `${i+1}: ${v} \n`
-
-// })
-// console.log(b)
