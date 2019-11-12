@@ -8,6 +8,8 @@ button.addEventListener("click",()=>{
     if( row.valueAsNumber <= table.rows.length && row.valueAsNumber >0 ){
         if( cell.valueAsNumber <= table.rows[row.valueAsNumber-1].cells.length && cell.valueAsNumber >0){
             table.rows[row.valueAsNumber-1].cells[cell.valueAsNumber-1].innerText = content.value
+        }else{
+            alert("Bạn nhập sai rồi!!!")
         }
     }else{
         alert("Bạn nhập sai rồi!!!")
