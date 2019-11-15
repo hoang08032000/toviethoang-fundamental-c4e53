@@ -1,0 +1,38 @@
+table {
+    border: red solid;
+    margin: auto;
+    display: block;
+    background-color: purple;
+}
+body {
+    width: 512px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+#result {
+    margin: 0 auto;
+    width: auto;
+    height: 40px;
+    border: pink solid;
+    font-size: 25px;
+    display: block;
+    padding: 2px;
+    background-color: gray;
+    overflow: auto;
+}
+.button {
+    width: 18.5%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: rgb(237, 100, 118);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#equal {
+    width: 45%;
+}
+#zero {
+    width: 30%;
+}
