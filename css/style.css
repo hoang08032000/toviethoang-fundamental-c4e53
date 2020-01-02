@@ -1,0 +1,147 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  height: 38px;
+  padding: 10px;
+  border: 1px solid #eae9ea;
+  border-radius: 5px;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 120px;
+  height: 38px;
+  padding: 10px;
+  color: #ffffff;
+  background: #4481fe;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+.register-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  background: url(../session_2_images/register-background.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.register-form {
+  min-width: 500px;
+  background: #ffffff;
+  padding: 0px 50px;
+}
+
+.log-in-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  background: url(../session_2_images/login-background.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.log-in-form {
+  min-width: 500px;
+  background: #ffffff;
+  padding: 0px 50px;
+}
+
+.form-header {
+  padding: 70px 0px;
+}
+
+.form-header > h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #788195;
+}
+
+.form-content > * {
+  margin-bottom: 15px;
+}
+
+.name-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-wrapper > * {
+  width: calc(50% - 7px);
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-error {
+  color: #ff0000;
+}
+
+.message-success {
+  color: #00ff00;
+}
+
+button:disabled {
+  background: #f2f2f2;
+}
+
+/* Chat */
+.chat-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.current-conversation {
+  width: 100%;
+  height: 100%;
+}
+
+.list-message {
+  padding: 10px;
+  height: calc(100% - 38px);
+  overflow-y: scroll;
+}
+
+.list-message>* {
+  margin-bottom: 10px;
+}
+
+.form-add-message {
+  display: flex;
+  height: 38px;
+}
+
+.form-add-message .input-wrapper {
+  width: calc(100% - 120px);
+}
+
+.message span {
+  padding: 10px;
+  display: inline-block;
+  max-width: 50%;
+  word-break: break-word;
+  border: 1px solid #4481fe;
+  border-radius: 5px;
+  color: #4481fe;
+}
+
+.your {
+  text-align: right;
+}
